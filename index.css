@@ -1,0 +1,153 @@
+/* GENERAL STYLES */
+
+/* merge these imports eventually idk */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+body {
+	font-family: 'PT Serif';
+	font-size: 16px;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background: #aadae6;
+}
+main {
+	max-width: 700px;
+	margin: 8px auto;
+	padding: 12px;
+	background: #fff;
+}
+h1 {
+	font-family: 'Kaushan Script';
+	margin-top: 48px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 64px;
+}
+b {
+	font-weight: 900;
+	font-size: 1.1em;
+}
+p {
+	margin: 0;
+}
+
+.button {
+	border: 1px solid black;
+	padding: 12px 24px;
+	margin: 4px;
+	color: #fff;
+}
+.button.email {
+	background: #3b5998;
+}
+.button.order {
+	background: #f73123;
+}
+.button.fb {
+	background: #3b5998;
+}
+.button-box {
+	clear: both;
+	justify-content: center;
+	display: flex;
+	padding-top: 24px;
+}
+
+/* STYLES FOR ORDER PAGE */
+:root {
+	--size: 70px;
+}
+
+.size-container {
+	display: block;
+	border: 3px solid #000;
+	height: calc((var(--size) * 5) + 3em);
+	width: calc(var(--size) * 5);
+	float: left;
+	margin: 0 8px;
+	padding: 0;
+	position: relative;
+}
+
+.size-template div {
+	position: absolute;
+	bottom: 0;
+	background: #000;
+	color: #fff;
+}
+.size-template .invert {
+	background: #fff;
+	color: #000;
+}
+.size-template .size-5 {
+	height: calc(var(--size) * 5);
+	width: calc(var(--size) * 5);
+}
+.size-template .size-4 {
+	height: calc(var(--size) * 4);
+	width: calc(var(--size) * 4);
+
+}
+.size-template .size-3 {
+	height: calc(var(--size) * 3);
+	width: calc(var(--size) * 3);
+}
+.size-template .size-2 {
+	height: calc(var(--size) * 2);
+	width: calc(var(--size) * 2);
+}
+
+.order-container {
+	overflow: auto;
+	float: right;
+	display: inline-block;
+	width: calc(100% - (var(--size) * 5.5));
+}
+
+.top-pad {
+	padding-top: 4px;
+}
+
+form textarea, form button {
+	width: calc(100% - 8px);
+	font-size: inherit;
+	font-family: inherit;
+	resize: none;
+	border-radius: 4px;
+	border: 1px solid black;
+	height: 1.5em;
+	padding: 2px;
+}
+
+form button {
+
+}
+
+textarea[name="message"] {
+	height: 7.5em;
+}
+
+button[type="submit"] {
+	display: inline-block;
+	width: 60%;
+	margin: 4px 20%;
+	height: 1.8em;
+}
+
+@media (max-width: 580px) {
+	h1 {
+		font-size: 40px;
+	}
+	.size-container {
+		float none;
+		margin: 0 auto;
+		float: none;
+	}
+	.order-container {
+		float: none;
+		width: 84%;
+		padding-left: 7%;
+	}
+}

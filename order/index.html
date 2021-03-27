@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Frosted Cookie Boutique - Order</title>
+	<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+	<h1>Order Cookies</h1>
+	<main>
+		<div class="size-container">
+				<p>
+					<b>Size Guide: </b> <br>
+					Elaborate cookie prices in brackets
+				</p>
+
+				<div class="size-template">
+					<div class="size-5 ">
+						<span>5x5 inch<br>$3.25 ($4.25)</span>
+					</div>
+					<div class="size-4 invert">
+						<span>4x4 inch<br>$2.50 ($3.50)</span>
+					</div>
+					<div class="size-3">
+						<span>3x3 inch<br>$2.00 ($3.00)</span>
+					</div>
+					<div class="size-2 invert">
+						<span>2x2 inch<br>$1.50 ($2.50)</span>
+					</div>
+				</div>
+		</div>
+		<div class="order-container">
+			<p class="top-pad">
+				Make a Cookie Boutique order here. You can also order by messaging us on Facebook.
+				<br><br>
+			</p>
+			<form class="" action="https://api.formcake.com/api/form/ded48e4b-b4f0-4fc9-9e31-3cc6c51f230e/submission" method="post" id="order">
+				<!-- textareas are everrrr so slightly less CSS unruly than inputs -->
+				<textarea name="name" form="order" placeholder="Name"></textarea>
+				<textarea name="email" form="order" placeholder="Email or phone"></textarea>
+				<textarea name="message" form="order" placeholder="Tell us about your order!"></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="button-box">
+			<a href="/" class="button order">Back</a>
+			<a href="//facebook.com" class="button fb">Facebook</a>
+		</div>
+	</main>
+</body>
+</html>
